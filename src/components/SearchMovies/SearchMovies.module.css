@@ -1,0 +1,66 @@
+body {
+    background-color: #706e6e;
+}
+.AllSearch {
+    margin: 20px auto;
+    text-align: center;
+}
+.darkSearch, .lightSearch {
+    margin-right: 20px;
+    color: rgba(23, 22, 22, 0.84);
+    padding: 10px 35px;
+    border-radius: 10px;
+}
+.darkSearch {
+    background-color: #cbc8c8;
+}
+.lightSearch {
+    background-color: snow;
+}
+
+.AllMovies {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.MoviesList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 0 auto;
+    gap: 20px;
+}
+.MoviesCard {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18%;
+    border-radius: 5px;
+    color: #f3adad;
+    padding: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+img {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.darkButton, .lightButton {
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+.darkButton {
+    background-color: #706e6e;
+    color: #f3adad;
+}
+.lightButton {
+    background-color: snow;
+    color: rgba(23, 22, 22, 0.84);
+}

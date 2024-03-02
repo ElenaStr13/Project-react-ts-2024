@@ -1,0 +1,61 @@
+.MovieDetails {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+.MovieDetails > p {
+    margin: 3vh 0 0 0;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+.ImgInfo {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 30px;
+    margin: 20px auto;
+}
+.ImgInfo img {
+    width: 40%;
+    height: 300px;
+    border-radius: 5px;
+
+}
+h4:first-child {
+    margin-top: 0;
+}
+.ImgInfo div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.ImgInfo div:last-child>div {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.OverView {
+    width: 80%;
+}
+.OverView > p {
+    text-align: start;
+}
+.Rating {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1vh;
+    margin-bottom: 1vh;
+}
+.Rating div:last-child {
+    display: flex;
+    flex-direction: row;
+}
+.badge {
+    margin-bottom: 10px;
+}

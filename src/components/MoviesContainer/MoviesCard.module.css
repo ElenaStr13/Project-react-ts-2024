@@ -1,0 +1,27 @@
+.darkMoviesCard, .lightMoviesCard {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18%;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+.darkMoviesCard {
+    color: #f3adad;
+}
+.lightMoviesCard {
+    color: rgba(23, 22, 22, 0.84);
+}
+
+.MoviesCard p {
+    margin-top: 10px;
+}
+img {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}

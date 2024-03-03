@@ -59,3 +59,17 @@ h4:first-child {
 .badge {
     margin-bottom: 10px;
 }
+.badge:hover {
+    color: #f3adad;
+}
+.VoteCount {
+    background-color: #f3adad;
+    color: rgba(23, 22, 22, 0.84);
+    height: 3vh;
+    padding: 5px;
+    border: 1px solid #f3adad;
+    border-radius: 10px;
+    position: absolute;
+    top: 480px;
+    left: 620px;
+}

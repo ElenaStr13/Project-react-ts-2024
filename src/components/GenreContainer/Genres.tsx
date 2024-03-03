@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 
 import {IGenre} from "../../interfaces/genreInterface";
 import {Genre} from "./Genre";

@@ -8,7 +8,7 @@ interface IProps extends PropsWithChildren {
 }
 const Genre: FC<IProps> = ({genre}) => {
     const {id: genre_id, name} = genre;
-    const {genreId, setGenreId} = useAppContext();
+    const {setGenreId} = useAppContext();
 
     const FindByGenre = () => {
         setGenreId(genre_id)

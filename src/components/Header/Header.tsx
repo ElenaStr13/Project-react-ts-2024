@@ -29,7 +29,7 @@ const Header:FC <IProps> = () => {
             <NavLink to={'movie'} onClick={changeGenre}>DataBase for Movie</NavLink>
             <NavLink to={'movie'} onClick={changeGenre}>Movies</NavLink>
             <NavLink to={'movie'} onClick={changeGenres}>Genres</NavLink>
-            <NavLink to={'movie'} onClick={forSearch}>Search</NavLink>
+            <NavLink to={'/3/search/movie'} onClick={forSearch}>Search</NavLink>
             <div className={css.ForCheckbox}>
                 <NavLink to={'movie'}>Theme</NavLink>
                 <input type="checkbox" id="switch" onClick={changeTheme}/>

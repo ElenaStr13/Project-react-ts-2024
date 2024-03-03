@@ -12,11 +12,9 @@ interface IProps extends PropsWithChildren {
     movieDertails: IMovie
 }
 const MovieInfo: FC<IProps> = ({movieDertails}) => {
-    const {id,
-        backdrop_path,
-        genres,
+    const {backdrop_path,
         genre_ids,
-        title,
+        vote_count,
         original_title,
         overview,
         original_language,
@@ -25,7 +23,6 @@ const MovieInfo: FC<IProps> = ({movieDertails}) => {
     } = movieDertails;
     let voteAverage = vote_average;
     const [genresAll, setGenresAll] = useState<IGenre[]>()
-    //const [genreMovie, setGenreMovie] = useState<string[]>([]);
 
     useEffect(() => {
         genreService.getAll().then(({data}) => {
@@ -33,10 +30,8 @@ const MovieInfo: FC<IProps> = ({movieDertails}) => {
 
         })
     }, [genre_ids]);
-     console.log(genresAll);
-     console.log(genre_ids);
-     let genreOfMovie: string[] = [];
 
+     let genreOfMovie: string[] = [];
 
     genresAll&&genresAll.map(genre => {
         for (let i = 0; i < genre_ids.length; i++) {
@@ -47,20 +42,21 @@ const MovieInfo: FC<IProps> = ({movieDertails}) => {
         }
         return genreOfMovie
     })
-    console.log(genreOfMovie.join(','));
+
     return (
         <div className={css.MovieDetails}>
             <p>{original_title}</p>
             <p>({original_title})</p>
             <div className={css.ImgInfo}>
                 <img src={baseUrlImage + backdrop_path} alt={original_title}></img>
+                <Badge className={css.VoteCount}>{vote_count}</Badge>
                 <div>
                     <div className={css.Rating}>
                         <div>Rating</div>
                         <StarsRating voteAverage={voteAverage}/>
                     </div>
                     <div>Genres</div>
-                    <Badge className={css.badge}>{genreOfMovie.join(', ')}</Badge>
+                    <Badge className={css.badge} >{genreOfMovie.join(', ')}</Badge>
                     <div>Original language</div>
                     <p>{original_language}</p>
                     <div>Release Date</div>

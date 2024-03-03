@@ -1,4 +1,5 @@
 import {createBrowserRouter} from "react-router-dom";
+
 import {MainLayout} from "./layouts";
 import {MoviesPage} from "./pages/MoviesPage";
 import {MoviesDetailsPage} from "./pages/MoviesDetailsPage";

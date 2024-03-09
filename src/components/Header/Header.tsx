@@ -3,6 +3,7 @@ import {NavLink} from "react-router-dom";
 
 import {useAppContext} from "../../hooks/useAppContext";
 import css from './Header.module.css'
+import {UserInfo} from "../UserContainer/UserInfo";
 
 interface IProps extends PropsWithChildren {
 
@@ -35,7 +36,7 @@ const Header:FC <IProps> = () => {
                 <input type="checkbox" id="switch" onClick={changeTheme}/>
                 <label htmlFor="switch">Toggle</label>
             </div>
-
+            < UserInfo/>
         </div>
     );
 };
